@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 392px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.item > h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.item > ul {
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.gallery > li {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+#name-input {
+  min-width: 360px;
+  min-height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.login-form {
+  max-width: 408px;
+  padding: 24px;
+}
+
+.login-form > label {
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+.login-form > button {
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.widget {
+  max-width: 345px;
+  padding: 100px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.widget > p {
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.change-color {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  min-width: 148px;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
+}
+
+.color {
+  display: block;
+  text-align: center;
+}
